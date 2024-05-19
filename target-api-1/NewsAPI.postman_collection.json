@@ -1,0 +1,151 @@
+{
+	"info": {
+		"_postman_id": "78c04702-cb4b-4171-ac04-52db1d4eb38d",
+		"name": "NewsAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "34983514",
+		"_collection_link": "https://www.postman.com/orbital-module-operator-19260088/workspace/target-api-1/collection/34983514-78c04702-cb4b-4171-ac04-52db1d4eb38d?action=share&source=collection_link&creator=34983514"
+	},
+	"item": [
+		{
+			"name": "GET Request API",
+			"item": [
+				{
+					"name": "Get Req API 1",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/everything?q=keyword&apiKey={{apikey}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "keyword"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Req API 2",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/sources?language=en&apiKey={{apikey}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"sources"
+							],
+							"query": [
+								{
+									"key": "language",
+									"value": "en"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Req API 3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/top-headlines/sources?apiKey={{apikey}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"top-headlines",
+								"sources"
+							],
+							"query": [
+								{
+									"key": "apiKey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Req API 4",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/everything?domains=techcrunch.com/&apiKey={{apikey}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "domains",
+									"value": "techcrunch.com/"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Req API 5",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/everything?q=the-verge&apiKey={{apikey}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"everything"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "the-verge"
+								},
+								{
+									"key": "apiKey",
+									"value": "{{apikey}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
